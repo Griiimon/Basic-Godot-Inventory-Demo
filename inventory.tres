@@ -1,0 +1,20 @@
+[gd_resource type="Resource" script_class="Inventory" load_steps=6 format=3 uid="uid://bfumm21eerd58"]
+
+[ext_resource type="Script" path="res://inventory_item.gd" id="1_hakae"]
+[ext_resource type="Script" path="res://inventory.gd" id="2_8i12b"]
+
+[sub_resource type="Resource" id="Resource_yg5lt"]
+script = ExtResource("1_hakae")
+text = "item1"
+
+[sub_resource type="Resource" id="Resource_ys0j4"]
+script = ExtResource("1_hakae")
+text = "item2"
+
+[sub_resource type="Resource" id="Resource_my7h1"]
+script = ExtResource("1_hakae")
+text = "it works!"
+
+[resource]
+script = ExtResource("2_8i12b")
+items = Array[ExtResource("1_hakae")]([SubResource("Resource_yg5lt"), SubResource("Resource_ys0j4"), SubResource("Resource_my7h1")])
